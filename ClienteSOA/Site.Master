@@ -1,0 +1,132 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ClienteSOA.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Mi aplicación ASP.NET</title>
+
+ 
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+   
+     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">       
+    <link rel="stylesheet" href="css/mailform.css"> 
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    
+    
+
+</head>
+<body>   
+         <div class="page">
+      <!--
+      ========================================================
+      							HEADER
+      ========================================================
+      
+      
+      -->
+      <header>
+        <div class="container">
+          <div class="brand">
+            <h1 class="brand_name"><a href="./">CLIENTE SOA</a></h1>
+            <p class="brand_slogan">La solución tecnológica que tu empresa necesita</p>
+          </div>
+       
+        </div>
+        <div id="stuck_container" class="stuck_container">
+          <div class="container">
+            <nav class="nav">
+              <ul data-type="navbar" class="sf-menu">                
+                   <li class="active"><a href="RegistrarVoto.aspx">REGISTRAR VOTO</a>
+                   </li>
+                   <li><a href="ConsultarMesa.aspx">CONSULTAR MESA</a>
+                   </li>
+                  <li ><a href="#">CARGA MASIVA</a>
+                      <ul>
+                    <li><a href="CargaMasivaConsultarMesa.aspx">Consultar Mesa</a></li>
+                    <li><a href="CargaMasivaRegistraVotos.aspx">Registrar Votos</a></li>
+                  </ul>
+                   </li>
+    
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!--
+      ========================================================
+                                  CONTENT
+      ========================================================
+      -->
+      
+        <section class="camera_container">
+          <div id="camera" class="camera_wrap">
+              <div data-src="images/im_slide2.jpg">
+              <div class="camera_caption fadeIn">
+                <div class="container">
+                  <div class="row">
+                    <div class="preffix_6 grid_6"></div>
+                  </div>                    
+                </div>
+              </div>
+            </div>
+            <div data-src="images/im_slide1.jpg">
+              <div class="camera_caption fadeIn">
+                <div class="container">
+                  <div class="row">
+                    <div class="preffix_6 grid_6"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-src="images/im_slide3.png">
+              <div class="camera_caption fadeIn">
+                <div class="container">
+                  <div class="row">
+                    <div class="preffix_6 grid_6"></div>
+                  </div>
+                </div>
+              </div>
+            </div>                    
+          </div>
+        </section>
+            <main>
+             <section class="well1">
+                  <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                  </asp:ContentPlaceHolder>
+
+             </section>
+        </main>
+        
+       
+      <!--
+      ========================================================
+                                  FOOTER
+      ========================================================
+      -->
+      <footer>
+        
+        <section>
+          <div class="container">
+            <div class="copyright">FIUSAC ERP © <span id="copyright-year"></span>.&nbsp;&nbsp;<a href="index-5.html">Privacy Policy</a> La solución tecnologica que tu empresa necesita.
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>   
+    <script src="js/script.js"></script>    
+   
+
+  
+</body>
+</html>
+
